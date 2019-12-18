@@ -1,1 +1,20 @@
 // Mixins Here
+.custom-btn(@btn-bgcolor, @size, @btn-color, @lenght:45px ){
+    display: table-cell;
+    cursor: pointer;
+    background-color: @btn-bgcolor;
+    width: @size;
+    margin: 0 0px 20px;
+    height: @lenght;
+    font-size: 2rem;
+    color: @btn-color;
+    border-radius: 6px;
+    vertical-align: middle;
+    text-align: center;
+
+    &:hover{
+        background-color: black;
+        color: @btn-color-switch;
+    }
+    
+}
